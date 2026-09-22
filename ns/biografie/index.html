@@ -23,9 +23,12 @@ nav a:hover::after,nav a.active::after{transform:scaleX(1)}
 main{max-width:740px;margin:0 auto;padding:3rem 2rem 5rem}
 .sh{font-family:'Cinzel',serif;font-size:.6rem;letter-spacing:.35em;color:var(--lav);text-transform:uppercase;margin-bottom:2rem;padding-bottom:.8rem;border-bottom:1px solid var(--lav-light)}
 .il{list-style:none}.il li{border-bottom:1px solid var(--lav-pale)}.il li:first-child{border-top:1px solid var(--lav-pale)}
-.il li a{display:flex;align-items:center;justify-content:space-between;padding:1.05rem .6rem;font-family:'Cinzel',serif;font-size:.9rem;letter-spacing:.03em;color:var(--ink);text-decoration:none;transition:color .2s,background .2s,padding-left .25s;border-radius:4px}
+.il li a{display:flex;align-items:center;justify-content:space-between;padding:1.05rem .6rem;text-decoration:none;transition:color .2s,background .2s,padding-left .25s;border-radius:4px}
+.il-testo{display:flex;flex-direction:column;gap:.15rem}
+.il-nome{font-family:'Cinzel',serif;font-size:1.05rem;letter-spacing:.03em;color:var(--ink)}
+.il-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:.88rem;color:var(--ink-muted);letter-spacing:.01em;line-height:1.35}
 .arr{color:var(--lav);opacity:0;transform:translateX(-6px);transition:opacity .2s,transform .2s;flex-shrink:0;margin-left:1rem}
-.il li a:hover{color:var(--accent);padding-left:.9rem;background:var(--lav-pale)}.il li a:hover .arr{opacity:1;transform:translateX(0)}
+.il li a:hover{background:var(--lav-pale)}.il li a:hover .il-nome{color:var(--accent)}.il li a:hover .arr{opacity:1;transform:translateX(0)}
 .at{font-family:'Cinzel',serif;font-size:clamp(1.3rem,3.5vw,1.8rem);font-weight:400;line-height:1.25;margin-bottom:.4rem;color:var(--ink)}
 .am{font-style:italic;font-size:.9rem;color:var(--ink-muted);margin-bottom:2rem;padding-bottom:1rem;border-bottom:1px solid var(--lav-pale)}
 .ab p{margin-bottom:1.1rem}.ab p:last-child{margin-bottom:0}.ab em{color:var(--accent);font-style:italic}
@@ -54,7 +57,24 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--lav-light);back
   <a href="../casi/">Casi Astropsicologici</a>
   <a href="../contatti.html">Contatti</a>
 </nav>
-<main><p class="sh">Biografie</p><ul class="il"><li><a href="bernadette.html"><span>Bernadette Soubirous</span><span class="arr">&#8594;</span></a></li><li><a href="rol.html"><span>Gustavo Adolfo Rol</span><span class="arr">&#8594;</span></a></li><li><a href="messner.html"><span>Reinhold Messner</span><span class="arr">&#8594;</span></a></li><li><a href="pascoli.html"><span>Giovanni Pascoli</span><span class="arr">&#8594;</span></a></li><li><a href="pifferi.html"><span>Alessia Pifferi</span><span class="arr">&#8594;</span></a></li><li><a href="pirandello.html"><span>Luigi Pirandello</span><span class="arr">&#8594;</span></a></li><li><a href="terzani.html"><span>Tiziano Terzani</span><span class="arr">&#8594;</span></a></li><li><a href="pauli.html"><span>Wolfgang Pauli</span><span class="arr">&#8594;</span></a></li><li><a href="burgess.html"><span>Anthony Burgess</span><span class="arr">&#8594;</span></a></li><li><a href="jong.html"><span>Erica Jong</span><span class="arr">&#8594;</span></a></li><li><a href="montessori.html"><span>Maria Montessori</span><span class="arr">&#8594;</span></a></li><li><a href="bilancia.html"><span>Donato Bilancia</span><span class="arr">&#8594;</span></a></li><li><a href="montanelli.html"><span>Indro Montanelli</span><span class="arr">&#8594;</span></a></li><li><a href="nietzsche.html"><span>FRIEDRICH NIETZSCHE</span><span class="arr">&#8594;</span></a></li><li><a href="marx.html"><span>KARL MARX</span><span class="arr">&#8594;</span></a></li><li><a href="zoff.html"><span>DINO ZOFF</span><span class="arr">&#8594;</span></a></li></ul></main>
+<main><p class="sh">Biografie</p><ul class="il">
+<li><a href="bernadette.html"><span class="il-testo"><span class="il-nome">Bernadette Soubirous</span><span class="il-sub">Il cielo di Bernadette Soubirous: struttura logica di un'estasi</span></span><span class="arr">&#8594;</span></a></li>
+<li><a href="rol.html"><span class="il-testo"><span class="il-nome">Gustavo Adolfo Rol</span><span class="il-sub">L'enigma di un uomo oltre le categorie</span></span><span class="arr">&#8594;</span></a></li>
+<li><a href="messner.html"><span class="il-testo"><span class="il-nome">Reinhold Messner</span><span class="il-sub">Scritto nelle stelle, scolpito nella roccia – il destino astrale di Reinhold Messner</span></span><span class="arr">&#8594;</span></a></li>
+<li><a href="pascoli.html"><span class="il-testo"><span class="il-nome">Giovanni Pascoli</span><span class="il-sub">Il "nido" di Pascoli: un'ipotesi di lettura astro-psicologica</span></span><span class="arr">&#8594;</span></a></li>
+<li><a href="pifferi.html"><span class="il-testo"><span class="il-nome">Alessia Pifferi</span><span class="il-sub">La seduzione come sopravvivenza – ritratto astrologico di una psiche fragile</span></span><span class="arr">&#8594;</span></a></li>
+<li><a href="pirandello.html"><span class="il-testo"><span class="il-nome">Luigi Pirandello</span><span class="il-sub">Le maschere non mentono: Pirandello e i segreti del suo tema natale</span></span><span class="arr">&#8594;</span></a></li>
+<li><a href="terzani.html"><span class="il-testo"><span class="il-nome">Tiziano Terzani</span><span class="il-sub">L'anima inquieta: una lettura astrologica</span></span><span class="arr">&#8594;</span></a></li>
+<li><a href="pauli.html"><span class="il-testo"><span class="il-nome">Wolfgang Pauli</span><span class="il-sub">Un genio diviso</span></span><span class="arr">&#8594;</span></a></li>
+<li><a href="burgess.html"><span class="il-testo"><span class="il-nome">Anthony Burgess</span><span class="il-sub">Arancia meccanica, stelle e ferite – chi era davvero Anthony Burgess</span></span><span class="arr">&#8594;</span></a></li>
+<li><a href="jong.html"><span class="il-testo"><span class="il-nome">Erica Jong</span><span class="il-sub">Eros e libertà: una scrittrice che non si è lasciata catalogare</span></span><span class="arr">&#8594;</span></a></li>
+<li><a href="montessori.html"><span class="il-testo"><span class="il-nome">Maria Montessori</span><span class="il-sub">Un destino scritto nelle stelle</span></span><span class="arr">&#8594;</span></a></li>
+<li><a href="bilancia.html"><span class="il-testo"><span class="il-nome">Donato Bilancia</span><span class="il-sub">Diciassette vittime e un bambino che piangeva dentro</span></span><span class="arr">&#8594;</span></a></li>
+<li><a href="montanelli.html"><span class="il-testo"><span class="il-nome">Indro Montanelli</span><span class="il-sub">Il guerriero del giornalismo libero e indipendente</span></span><span class="arr">&#8594;</span></a></li>
+<li><a href="nietzsche.html"><span class="il-testo"><span class="il-nome">Friedrich Nietzsche</span><span class="il-sub">La ferita di Dio: la vita, il tema natale e il dramma filosofico di Friedrich Nietzsche</span></span><span class="arr">&#8594;</span></a></li>
+<li><a href="marx.html"><span class="il-testo"><span class="il-nome">Karl Marx</span><span class="il-sub">Quando la vita diventa missione: il tema natale di Karl Marx tra materia e utopia</span></span><span class="arr">&#8594;</span></a></li>
+<li><a href="zoff.html"><span class="il-testo"><span class="il-nome">Dino Zoff</span><span class="il-sub">Dall'officina al mito, l'operaio specializzato del calcio</span></span><span class="arr">&#8594;</span></a></li>
+</ul></main>
 <footer>Biografie Stellari Morpurghiane &nbsp;&#10022;&nbsp; Astrologia, psiche e destino</footer>
 <div class="lb-overlay" id="lb" onclick="closeLB()"><span class="lb-close" onclick="closeLB()">&#10005;</span><img id="lb-img" src="" alt=""/></div>
 <script>
@@ -63,4 +83,5 @@ function openLB(src){document.getElementById('lb-img').src=src;document.getEleme
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeLB();});
 window.addEventListener('load',function(){document.querySelectorAll('.tema-img img').forEach(function(img){img.addEventListener('click',function(){openLB(img.src);});});});
 </script>
+<script src="../protezione.js"></script>
 </body></html>
